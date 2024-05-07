@@ -39,6 +39,63 @@
    <script type="module" src="assets/js/route.js"></script>
 </head>
 <body>
+
+    <!--
+       - HEADER
+    -->
+
+    <header class="header">
+        <div class="container">
+            <a href="#" class="logo">
+                <img src="./assets/images/logo.png" alt="">
+            </a>
+
+            <div class="search-view" data-search-view>
+
+
+                <div class="search-wrapper">
+                    <input type="search" name="search" placeholder="Search city ..."
+                    autocomplete="off" class="search-field" data-search-field>
+                    <span class="m-icon">search</span>
+                </div>
+
+                <button class="icon-btn leading-icon has-state" aria-label="close search" data-search-toggler>
+                    <span class="m-icon">arow_back</span>
+
+                </button>
+
+                <div class="search-result" data-search-result>
+                    <ul class="view-list" data-search-list>
+                        <li class="view-item">
+                            <span class="m-icon">location_on</span>
+
+                            <div>
+                                <p class="item-title">London</p>
+                            
+                                <p class="lebel-2 item-subtitle">State of London, GB</p>
+
+                            </div>
+
+                            <a href="" class="item-link has-state" data-search-toggler=""></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="header-actions">
+
+                <button class="icon-btn has-state" aria-label="open search" data-search-toggler="">
+                    <span class="m-icon">search</span>
+                </button>
+
+                <a href="#/current-location" class="btn-primary has-state" data-current-location-btn>
+                    <span class="m-icon">my_location</span>
+
+                    <span class="span">Current Location</span>
+                </a>
+            </div>
+        </div>
+    </header>
     
 </body>
 </html>
